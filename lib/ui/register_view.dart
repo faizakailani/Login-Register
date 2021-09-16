@@ -14,7 +14,7 @@ class _RegisterViewState extends State<RegisterView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.pink,
       appBar: AppBar(
         title: Text("SIGN UP", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),),
         elevation: 0,
@@ -27,7 +27,7 @@ class _RegisterViewState extends State<RegisterView> {
           child: SingleChildScrollView(
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.grey,
+                color: Colors.pink,
                 // borderRadius: BorderRadius.only(topLeft: Radius.circular(100),),
               ),
 
@@ -58,7 +58,7 @@ class _RegisterViewState extends State<RegisterView> {
                         child: Column(
                           children: <Widget>[
                             // Text("LOGIN", style: TextStyle(color: Colors.lightGreen, fontWeight: FontWeight.bold, fontSize: 25.0),),
-                            SizedBox(height: 30,),
+                            SizedBox(height: 20,),
                             TextField(
                               decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.person),
@@ -93,17 +93,16 @@ class _RegisterViewState extends State<RegisterView> {
                             ),
                             Row(
                               children: <Widget>[
-                                TextButton(onPressed: null, child: Text("Forgot Password ?",style: TextStyle(color: Colors.grey))),
+                                TextButton(onPressed: null, child: Text("Forgot Password ?",style: TextStyle(color: Colors.pinkAccent))),
                               ],
                             ),
-                            SizedBox(height: 30,),
                             Container(
                               width: MediaQuery.of(context).size.width*.80,
                               height: 50,
                               child: TextButton(
                                   onPressed: (){},
-                                  child: Text("Login",style: TextStyle(color: Colors.white, fontSize: 18),),
-                                  style: TextButton.styleFrom(backgroundColor: Colors.grey,)
+                                  child: Text("Sign Up",style: TextStyle(color: Colors.white, fontSize: 18),),
+                                  style: TextButton.styleFrom(backgroundColor: Colors.pink,)
                               ),
                             ),
                             Row(
@@ -114,7 +113,7 @@ class _RegisterViewState extends State<RegisterView> {
                                     onPressed: (){
                                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginView()),);
                                     },
-                                    child: Text("Sign In",style: TextStyle(color: Colors.grey))
+                                    child: Text("Login",style: TextStyle(color: Colors.pinkAccent))
                                 )
                               ],
                             ),

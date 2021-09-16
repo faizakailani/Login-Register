@@ -14,7 +14,7 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.pink,
       appBar: AppBar(
         title: Text("LOGIN", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),),
         elevation: 0,
@@ -27,7 +27,7 @@ class _LoginViewState extends State<LoginView> {
           child: SingleChildScrollView(
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.grey,
+                color: Colors.pink,
                 // borderRadius: BorderRadius.only(topLeft: Radius.circular(100),),
               ),
 
@@ -85,7 +85,7 @@ class _LoginViewState extends State<LoginView> {
                             ),
                             Row(
                               children: <Widget>[
-                                TextButton(onPressed: null, child: Text("Forgot Password ?",style: TextStyle(color: Colors.grey))),
+                                TextButton(onPressed: null, child: Text("Forgot Password ?",style: TextStyle(color: Colors.pinkAccent))),
                               ],
                             ),
                             SizedBox(height: 30,),
@@ -97,7 +97,7 @@ class _LoginViewState extends State<LoginView> {
 
                                   },
                                   child: Text("Login",style: TextStyle(color: Colors.white, fontSize: 18),),
-                                  style: TextButton.styleFrom(backgroundColor: Colors.grey,)
+                                  style: TextButton.styleFrom(backgroundColor: Colors.pink,)
                               ),
                             ),
                             Row(
@@ -108,7 +108,7 @@ class _LoginViewState extends State<LoginView> {
                                     onPressed: (){
                                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => RegisterView()),);
                                     },
-                                    child: Text("Sign Up",style: TextStyle(color: Colors.grey))
+                                    child: Text("Sign Up",style: TextStyle(color: Colors.pinkAccent))
                                 )
                               ],
                             ),
